@@ -1,0 +1,10 @@
+---
+- name: 添加用户      
+    name: GeorgeLi     
+    state: present     
+#   state: absent    
+    remove: yes
+    group: wheel
+    append: yes
+  tags:
+    - user

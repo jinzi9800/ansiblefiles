@@ -1,0 +1,5 @@
+---
+- name: 安装　epel　仓库
+  yum: 
+    name: epel-release
+    state: latest

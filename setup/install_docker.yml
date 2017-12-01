@@ -1,0 +1,5 @@
+---
+- name: install_docker
+  pip:
+    name: docker
+    state: latest

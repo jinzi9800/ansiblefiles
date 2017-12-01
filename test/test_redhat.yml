@@ -1,0 +1,7 @@
+---
+- name: IF redhat
+  debug:
+    msg: 'HONGMAO'
+  when: ansible_os_family == 'Hat'
+  tags:
+    - test

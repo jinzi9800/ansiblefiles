@@ -1,0 +1,5 @@
+---
+- name: Restart ppp
+  service:
+    name: ppp
+    state: restarted

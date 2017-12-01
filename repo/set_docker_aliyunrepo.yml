@@ -1,0 +1,10 @@
+---
+- name: set_docker_aliyunrepo
+  command: mkdir -p /etc/docker \
+  && tee /etc/docker/daemon.json <<-EOF \
+{ \
+  "registry-mirrors": ["https://osblw9aw.mirror.aliyuncs.com"] \
+} \
+EOF \
+&& systemctl daemon-reload \
+&& systemctl restart docker

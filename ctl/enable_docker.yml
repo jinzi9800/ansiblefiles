@@ -1,0 +1,8 @@
+---
+- name: enable_docker
+  service:
+    name: docker
+    state: started
+    enabled: true
+  tags:
+    - enable-docker
